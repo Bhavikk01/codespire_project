@@ -1,0 +1,61 @@
+[{
+    "id": 123456,
+    "name": "American tourist bag",
+    "description": "This is the most popular american tourist bag you can ever buy",
+    "price": 1500.25,
+    "img": "ThisIsTheUrlOfImage",
+    "star": 4.1,
+    "location": "Indore, Madhya Pradesh",
+    "createdAt": "2022-12-03",
+    "updatedAt": "2022-12-03",
+    "type": "Bag"
+  },
+  {
+  "id": 234567,
+  "name": "Puma Shoes",
+  "description": "This is the best shoes you can ever buy",
+  "price": 19000,
+  "img": "ThisIsTheUrlOfImage",
+  "star": 4.8,
+  "location": "Indore, Madhya Pradesh",
+  "createdAt": "2022-12-03",
+  "updatedAt": "2023-02-03",
+  "type": "Shoes"
+  },
+  {
+  "id": 456789,
+  "name": "Winter collection jacket",
+  "description": "This is the best winter collection jacket you can ever buy",
+  "price": 4450.25,
+  "img": "ThisIsTheUrlOfImage",
+  "star": 3.9,
+  "location": "Indore, Madhya Pradesh",
+  "createdAt": "2022-12-03",
+  "updatedAt": "2023-04-13",
+  "type": "Jacket"
+  },
+  {
+  "id": 567891,
+  "name": "Yamaha Guitar",
+  "description": "This is the most popular guitar you can afford in your range",
+  "price": 9500.25,
+  "img": "ThisIsTheUrlOfImage",
+  "star": 5.0,
+  "location": "Indore, Madhya Pradesh",
+  "createdAt": "2023-12-03",
+  "updatedAt": "2024-01-23",
+  "type": "Guitar"
+  },
+  {
+  "id": 864649,
+  "name": "Music Box",
+  "description": "This is the most popular and beautiful music box made with glass",
+  "price": 2500.25,
+  "img": "ThisIsTheUrlOfImage",
+  "star": 5.5,
+  "location": "Indore, Madhya Pradesh",
+  "createdAt": "2022-12-03",
+  "updatedAt": "2022-12-03",
+  "type": "Music Box"
+  }
+  ]

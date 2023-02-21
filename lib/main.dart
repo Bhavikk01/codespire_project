@@ -1,27 +1,49 @@
+import 'package:codespire_app/app/services/firebase.dart';
+import 'package:codespire_app/app/services/storage.dart';
 import 'package:codespire_app/pages/home_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:get/get.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'app/routes/routes.dart';
+import 'app/screens/auth_screen/signInPage.dart';
+import 'app/user_store.dart';
+import 'app/widgets/authWidget.dart';
+import 'firebase_options.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  Get.put<FirebaseFireStore>(FirebaseFireStore());
+  Get.put<StorageService>(await StorageService().init());
+  Get.put<UserStore>(UserStore());
+  runApp(const ProviderScope(
+      child: MyApp()));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      builder: (context, child) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-          ),
-          home: const HomePage(),
-        );
-      },
+  Widget build(BuildContext context, WidgetRef ref) {
+    return GetMaterialApp(
+      theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(
+              brightness: Brightness.light,
+              primary: Colors.orange,
+              seedColor: Colors.orange
+          )
+      ),
+      getPages: RouteHelper.routes,
+      home: Scaffold(
+        body: AuthWidget(
+          signedInBuilder: (context) => const HomePage(),
+          nonSignedInBuilder: (_) => const SignInPage(),
+        ),
+      ),
     );
   }
 }

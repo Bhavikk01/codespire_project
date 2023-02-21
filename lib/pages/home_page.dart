@@ -57,8 +57,7 @@ class _HomePageState extends State<HomePage> {
         bottomNavigationBar: Stack(
           children: [
             SnakeNavigationBar.color(
-              backgroundColor: /*Color.fromRGBO(64, 66, 94, 1).withOpacity(0.7)*/
-                  Colors.grey.withOpacity(0.2),
+              backgroundColor: Colors.grey.withOpacity(0.2),
               behaviour: snakeBarStyle,
               height: 52,
               snakeShape: snakeShape,

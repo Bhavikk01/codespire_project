@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:codespire_app/repo/cart_repo.dart';
 import 'package:get/get.dart';
 
@@ -7,6 +9,6 @@ class CartController {
 
   fetchData() async {
     Response response = await cartRepo.getJson();
-    print(response.statusCode);
+    log(response.statusCode.toString());
   }
 }

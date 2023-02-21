@@ -1,12 +1,12 @@
 import 'package:codespire_app/widgets/small_text.dart';
-import 'package:flutter/Material.dart';
+import 'package:flutter/material.dart';
 
 class IconAndText extends StatelessWidget {
   final IconData icon;
   final String text;
   final Color color;
   final Color iconColor;
-  IconAndText({
+  const IconAndText({
     required this.icon,
     required this.color,
     Key? key,

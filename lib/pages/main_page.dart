@@ -1,8 +1,6 @@
 import 'package:codespire_app/widgets/big_text.dart';
 import 'package:codespire_app/widgets/top_contributors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MainPage extends StatefulWidget {
@@ -66,7 +64,7 @@ class _MainPageState extends State<MainPage> {
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black.withOpacity(0.3),
-                          offset: Offset(0, 0),
+                          offset: const Offset(0, 0),
                           blurRadius: 5,
                         ),
                       ],
@@ -89,7 +87,7 @@ class _MainPageState extends State<MainPage> {
           SizedBox(
             height: 20.h,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(left: 8.0),
             child: BigText(
               text: "Leading Contributors",
@@ -101,7 +99,7 @@ class _MainPageState extends State<MainPage> {
           SizedBox(
             height: 15.h,
           ),
-          TopContributors(),
+          const TopContributors(),
         ],
       ),
     );

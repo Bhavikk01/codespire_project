@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:codespire_app/models/product_model.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
@@ -9,10 +8,10 @@ class CartRepo {
     final String jsonData =
         await rootBundle.loadString('assets/json/cart_item.json');
     final Response response = await jsonDecode(jsonData);
-    if (response != null) {
+    if (response.body != null) {
       return response;
     } else {
-      return Response(statusCode: 1);
+      return const Response(statusCode: 1);
     }
   }
 }

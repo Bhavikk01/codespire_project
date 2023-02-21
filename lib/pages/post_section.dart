@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'dart:developer';
 
 import 'package:codespire_app/widgets/small_text.dart';
 import 'package:dotted_border/dotted_border.dart';
@@ -15,17 +15,17 @@ class PostSection extends StatefulWidget {
 }
 
 class _PostSectionState extends State<PostSection> {
-  @override
   late TextEditingController postDescriptionController;
   bool imagePresent = false;
-  XFile? imageUploaded = null;
+  XFile? imageUploaded;
 
   @override
   void initState() {
     super.initState();
-    postDescriptionController = new TextEditingController();
+    postDescriptionController = TextEditingController();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
@@ -108,7 +108,7 @@ class _PostSectionState extends State<PostSection> {
                             hintText: "Enter Description",
 
                             //make hint text
-                            hintStyle: TextStyle(
+                            hintStyle: const TextStyle(
                               color: Colors.black,
                               fontSize: 16,
                               fontFamily: "verdana_regular",
@@ -128,14 +128,13 @@ class _PostSectionState extends State<PostSection> {
                         ),
                       ),
                       ElevatedButton(
-                        style: ButtonStyle(),
+                        style: const ButtonStyle(),
                         onPressed: () {
-                          if (postDescriptionController.text != null &&
-                              imageUploaded != null) {
-                            print("Post Successful");
+                          if (imageUploaded != null) {
+                            log("Post Successful");
                           }
                         },
-                        child: Text("Post"),
+                        child: const Text("Post"),
                       ),
                     ],
                   )

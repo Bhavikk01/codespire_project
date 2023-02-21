@@ -15,11 +15,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  @override
-  final BorderRadius _borderRadius = const BorderRadius.only(
-    topLeft: Radius.circular(25),
-    topRight: Radius.circular(25),
-  );
 
   ShapeBorder? bottomBarShape = const RoundedRectangleBorder(
     borderRadius: BorderRadius.all(Radius.circular(25)),
@@ -48,12 +43,13 @@ class _HomePageState extends State<HomePage> {
     const Color(0xFFF4E4CE),
   ];
   List<Widget> screens = [
-    PostSection(),
-    MainPage(),
-    ShoppingPage(),
-    DonationPage(),
+    const PostSection(),
+    const MainPage(),
+    const ShoppingPage(),
+    const DonationPage(),
   ];
 
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(

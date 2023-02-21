@@ -2,13 +2,13 @@ import 'package:codespire_app/utils/colors.dart';
 import 'package:codespire_app/widgets/big_text.dart';
 import 'package:codespire_app/widgets/icon_and_text.dart';
 import 'package:codespire_app/widgets/small_text.dart';
-import 'package:flutter/Material.dart';
+import 'package:flutter/material.dart';
 
 class AppColumn extends StatelessWidget {
   final int starCount;
   final String text;
   final double textSize;
-  AppColumn(
+  const AppColumn(
       {this.starCount = 5, required this.text, this.textSize = 0, Key? key})
       : super(key: key);
 
@@ -21,7 +21,7 @@ class AppColumn extends StatelessWidget {
           text: text,
           size: textSize,
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Row(
@@ -29,7 +29,7 @@ class AppColumn extends StatelessWidget {
             Wrap(
               children: List.generate(
                   starCount,
-                  (index) => Icon(
+                  (index) => const Icon(
                         Icons.star,
                         color: AppColors.mainColor,
                         size: 15,
@@ -38,27 +38,27 @@ class AppColumn extends StatelessWidget {
             const SizedBox(
               width: 10,
             ),
-            SmallText(
+            const SmallText(
               text: "4.5",
             ),
             const SizedBox(
               width: 10,
             ),
-            SmallText(
+            const SmallText(
               text: "1287",
             ),
             const SizedBox(
               width: 10,
             ),
-            SmallText(text: "comments"),
+            const SmallText(text: "comments"),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
+          children: const[
             IconAndText(
               text: "Normal",
               icon: Icons.circle_sharp,

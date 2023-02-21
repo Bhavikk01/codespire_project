@@ -41,7 +41,7 @@ class _DonationPageState extends State<DonationPage> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.white38,
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           fit: BoxFit.cover,
                           image: NetworkImage(
                             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2vBQ1vOla9pPM6M0ZsYZb7OckCS21cgN_Q&usqp=CAU',
@@ -55,7 +55,7 @@ class _DonationPageState extends State<DonationPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               'Total Points Earned',
                               style: TextStyle(
                                 fontSize: 14,
@@ -70,7 +70,7 @@ class _DonationPageState extends State<DonationPage> {
                                 boxShadow: [
                                   BoxShadow(
                                     color: Colors.black.withOpacity(0.3),
-                                    offset: Offset(0, 0),
+                                    offset: const Offset(0, 0),
                                     blurRadius: 5,
                                   ),
                                 ],
@@ -79,7 +79,7 @@ class _DonationPageState extends State<DonationPage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "200",
                                     style: TextStyle(
                                       fontSize: 12,
@@ -104,7 +104,7 @@ class _DonationPageState extends State<DonationPage> {
                 SizedBox(
                   height: 5.h,
                 ),
-                Text(
+                const Text(
                   'Description',
                   style: TextStyle(
                     fontSize: 17,
@@ -115,14 +115,14 @@ class _DonationPageState extends State<DonationPage> {
                   height: 5.h,
                 ),
                 Container(
-                  constraints: BoxConstraints(
+                  constraints: const BoxConstraints(
                     maxHeight: 1000,
                   ),
                   padding: EdgeInsets.all(2.h),
                   //color: Colors.amber,
                   width: double.maxFinite,
                   //height: 50,
-                  child: Text(
+                  child: const Text(
                     'Typography has one plain duty before it and that is to convey information in writing. No argument or consideration can absolve typography from this purpose.one plain duty before it and that is to convey information in writing. No argument or consideration can absolve typography from this purpose.one plain duty before it and that is to convey information in writing. No argument or consideration can absolve typography from this purpose.',
                     textAlign: TextAlign.justify,
                   ),

@@ -1,4 +1,4 @@
-import 'package:flutter/Material.dart';
+import 'package:flutter/material.dart';
 
 class AppIcon extends StatelessWidget {
   final IconData icon;
@@ -6,7 +6,7 @@ class AppIcon extends StatelessWidget {
   final Color iconColor;
   final double size;
   final double iconSize;
-  AppIcon(
+  const AppIcon(
       {required this.icon,
       this.iconSize = 16,
       this.iconColor = const Color(0xFF756d54),

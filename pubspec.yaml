@@ -40,6 +40,11 @@ dependencies:
   lottie: ^2.2.0
   flutterfire_ui: ^0.4.3+20
   flutter_riverpod: ^1.0.3
+  google_maps_flutter: ^2.1.2
+  geocoding: ^2.0.4
+  dio: ^5.0.0
+  geolocator: ^9.0.2
+
   firebase_core: ^2.2.0
   firebase_storage: ^11.0.13
   shared_preferences: ^2.0.13

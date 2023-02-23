@@ -1,8 +1,8 @@
-import 'package:codespire_app/utils/colors.dart';
-import 'package:codespire_app/widgets/app_column.dart';
-import 'package:codespire_app/widgets/big_text.dart';
-import 'package:codespire_app/widgets/icon_and_text.dart';
-import 'package:codespire_app/widgets/small_text.dart';
+import 'package:codespire_app/app/utils/colors.dart';
+import 'package:codespire_app/app/utils/app_column.dart';
+import 'package:codespire_app/app/utils/big_text.dart';
+import 'package:codespire_app/app/utils/icon_and_text.dart';
+import 'package:codespire_app/app/utils/small_text.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

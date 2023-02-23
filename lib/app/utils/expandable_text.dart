@@ -1,5 +1,5 @@
-import 'package:codespire_app/utils/colors.dart';
-import 'package:codespire_app/widgets/small_text.dart';
+import 'package:codespire_app/app/utils/colors.dart';
+import 'package:codespire_app/app/utils/small_text.dart';
 import 'package:flutter/material.dart';
 
 class ExpandedText extends StatefulWidget {

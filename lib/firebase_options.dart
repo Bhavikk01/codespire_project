@@ -44,39 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD8DpU3BFrumE_j52dXCe9RpIjvNd4qEdk',
-    appId: '1:821191142944:web:12d938489910ed3d3fd645',
-    messagingSenderId: '821191142944',
-    projectId: 'sentimentaldiary',
-    authDomain: 'sentimentaldiary.firebaseapp.com',
-    storageBucket: 'sentimentaldiary.appspot.com',
+    apiKey: 'AIzaSyAYg04IXKPZTacMk6K64OQXmBJuFd1Aepw',
+    appId: '1:837446792148:web:2e5929fc12fcbd9fc95c41',
+    messagingSenderId: '837446792148',
+    projectId: 'food-delivery-flutter-project',
+    authDomain: 'food-delivery-flutter-project.firebaseapp.com',
+    storageBucket: 'food-delivery-flutter-project.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDj2Uli5HL4tILqvk_Q9WWEhPK_t46k2Ik',
-    appId: '1:821191142944:android:b963f744982e9f343fd645',
-    messagingSenderId: '821191142944',
-    projectId: 'sentimentaldiary',
-    storageBucket: 'sentimentaldiary.appspot.com',
+    apiKey: 'AIzaSyDMCVhxAE2NT6868y-cVZA_grTNUwcB97E',
+    appId: '1:837446792148:android:f67ad996795a1b44c95c41',
+    messagingSenderId: '837446792148',
+    projectId: 'food-delivery-flutter-project',
+    storageBucket: 'food-delivery-flutter-project.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBa4b31usup1lekPGLpWn-VEz8YWXe0chE',
-    appId: '1:821191142944:ios:f3ab6ebfeea9b5d53fd645',
-    messagingSenderId: '821191142944',
-    projectId: 'sentimentaldiary',
-    storageBucket: 'sentimentaldiary.appspot.com',
-    iosClientId: '821191142944-u89ufnug44mqbjc1ed3p86sjr20jbhm2.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBuFePXruLiQ-Mol6_OXrG4vhLPM3CvOtw',
+    appId: '1:837446792148:ios:31d80992e78be4f0c95c41',
+    messagingSenderId: '837446792148',
+    projectId: 'food-delivery-flutter-project',
+    storageBucket: 'food-delivery-flutter-project.appspot.com',
+    iosClientId: '837446792148-kni6ok5ba6cjlgdmmgf8qhuntm58h2f2.apps.googleusercontent.com',
     iosBundleId: 'com.example.codespireApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBa4b31usup1lekPGLpWn-VEz8YWXe0chE',
-    appId: '1:821191142944:ios:f3ab6ebfeea9b5d53fd645',
-    messagingSenderId: '821191142944',
-    projectId: 'sentimentaldiary',
-    storageBucket: 'sentimentaldiary.appspot.com',
-    iosClientId: '821191142944-u89ufnug44mqbjc1ed3p86sjr20jbhm2.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBuFePXruLiQ-Mol6_OXrG4vhLPM3CvOtw',
+    appId: '1:837446792148:ios:31d80992e78be4f0c95c41',
+    messagingSenderId: '837446792148',
+    projectId: 'food-delivery-flutter-project',
+    storageBucket: 'food-delivery-flutter-project.appspot.com',
+    iosClientId: '837446792148-kni6ok5ba6cjlgdmmgf8qhuntm58h2f2.apps.googleusercontent.com',
     iosBundleId: 'com.example.codespireApp',
   );
 }

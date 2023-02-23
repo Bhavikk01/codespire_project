@@ -1,5 +1,5 @@
-import 'package:codespire_app/widgets/big_text.dart';
-import 'package:codespire_app/widgets/top_contributors.dart';
+import 'package:codespire_app/app/utils/big_text.dart';
+import 'package:codespire_app/app/utils/top_contributors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
